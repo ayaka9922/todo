@@ -10,11 +10,15 @@ gem 'fastri'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
-
 gem 'rake'
-gem 'sinatra/activerecord'
+gem 'sinatra-activerecord'
 gem 'activerecord' , '5.2.3'
 gem 'bcrypt'
 
-group :development
+group :development do
   gem 'sqlite3' , '1.4.1'
+end
+
+group :production do
+  gem 'pg' , '0.21.0'
+end
