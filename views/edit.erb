@@ -7,10 +7,10 @@
         リスト：
         <select name="list" class="form-control">
         <% List.all.each do |list|%>
-          <option value="<%= list.id %>">
+          <option value="<%= list.id %>"
             <% if list.id == @task.list.id %>
               selected
-            <% end %>
+            <% end %>>
               <%=list.name%>
           </option>
         <% end %>
